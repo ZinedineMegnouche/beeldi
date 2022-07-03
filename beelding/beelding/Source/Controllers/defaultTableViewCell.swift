@@ -10,8 +10,16 @@ import UIKit
 
 class defaultTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var defaultImg: UIImageView!
+    @IBOutlet weak var faultLbl: UILabel!
+    
+    @IBOutlet weak var isDefaultLbl: UILabel!
+    @IBOutlet weak var defaultView: UIView!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var recommandationLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupV()
         // Initialization code
     }
 
@@ -19,6 +27,13 @@ class defaultTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setupV(){
+        defaultImg.layer.cornerRadius = 10
+        defaultView.layer.shadowRadius = 5
+        defaultView.layer.shadowOpacity = 0.30
+        defaultView.layer.cornerRadius = 16
     }
     
 }

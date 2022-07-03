@@ -6,7 +6,7 @@
 //  Copyright © 2019 Beeldi. All rights reserved.
 //
 
-import XCTest
+/*import XCTest
 @testable import beelding
 
 class beeldingTests: XCTestCase {
@@ -31,4 +31,4 @@ class beeldingTests: XCTestCase {
         }
     }
 
-}
+}*/

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2111BF286CD0200061965A /* equipement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2111BE286CD0200061965A /* equipement.swift */; };
+		0B2111C2286D89EE0061965A /* equipementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2111C0286D89EE0061965A /* equipementTableViewCell.swift */; };
+		0B2111C3286D89EE0061965A /* equipementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2111C1286D89EE0061965A /* equipementTableViewCell.xib */; };
+		0B2111C6286D90470061965A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2111C4286D90470061965A /* DetailViewController.swift */; };
+		0B2111C7286D90470061965A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2111C5286D90470061965A /* DetailViewController.xib */; };
+		0B2111CB286DED5D0061965A /* faults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2111CA286DED5D0061965A /* faults.swift */; };
+		0B5E3E212871D78400D5E9BC /* defaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5E3E1F2871D78400D5E9BC /* defaultTableViewCell.swift */; };
+		0B5E3E222871D78400D5E9BC /* defaultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B5E3E202871D78400D5E9BC /* defaultTableViewCell.xib */; };
 		14571F6AC7A2B7BDE7247A57 /* Pods_beeldingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141C2E2A936CE4F7D8D0C31B /* Pods_beeldingTests.framework */; };
 		5144ECA52356F50800F4FB92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144ECA42356F50800F4FB92 /* AppDelegate.swift */; };
 		5144ECA92356F50800F4FB92 /* EquipmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144ECA82356F50800F4FB92 /* EquipmentListViewController.swift */; };
@@ -40,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2111BE286CD0200061965A /* equipement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = equipement.swift; sourceTree = "<group>"; };
+		0B2111C0286D89EE0061965A /* equipementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = equipementTableViewCell.swift; sourceTree = "<group>"; };
+		0B2111C1286D89EE0061965A /* equipementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = equipementTableViewCell.xib; sourceTree = "<group>"; };
+		0B2111C4286D90470061965A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0B2111C5286D90470061965A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		0B2111CA286DED5D0061965A /* faults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = faults.swift; sourceTree = "<group>"; };
+		0B5E3E1F2871D78400D5E9BC /* defaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaultTableViewCell.swift; sourceTree = "<group>"; };
+		0B5E3E202871D78400D5E9BC /* defaultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = defaultTableViewCell.xib; sourceTree = "<group>"; };
 		141C2E2A936CE4F7D8D0C31B /* Pods_beeldingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beeldingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4425F6C77D3274387186C0D5 /* Pods-beeldingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeldingTests.debug.xcconfig"; path = "Target Support Files/Pods-beeldingTests/Pods-beeldingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B5CE011346DD547B5820F77 /* Pods-beelding-beeldingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beelding-beeldingUITests.release.xcconfig"; path = "Target Support Files/Pods-beelding-beeldingUITests/Pods-beelding-beeldingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2111BD286CCFF20061965A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B2111BE286CD0200061965A /* equipement.swift */,
+				0B2111CA286DED5D0061965A /* faults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		32EA993BDF63DF0929DA4A45 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +136,7 @@
 		5144EC982356F50800F4FB92 = {
 			isa = PBXGroup;
 			children = (
+				0B2111BD286CCFF20061965A /* Model */,
 				51B11B63235709820078E0A9 /* Default-568h@2x.png */,
 				5144ECA32356F50800F4FB92 /* beelding */,
 				5144ECBA2356F50A00F4FB92 /* beeldingTests */,
@@ -165,7 +191,13 @@
 			isa = PBXGroup;
 			children = (
 				5144ECA82356F50800F4FB92 /* EquipmentListViewController.swift */,
+				0B2111C0286D89EE0061965A /* equipementTableViewCell.swift */,
+				0B2111C1286D89EE0061965A /* equipementTableViewCell.xib */,
 				5144ECD42356F64800F4FB92 /* EquipmentListViewController.xib */,
+				0B2111C4286D90470061965A /* DetailViewController.swift */,
+				0B2111C5286D90470061965A /* DetailViewController.xib */,
+				0B5E3E1F2871D78400D5E9BC /* defaultTableViewCell.swift */,
+				0B5E3E202871D78400D5E9BC /* defaultTableViewCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -308,7 +340,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5144ECB12356F50900F4FB92 /* LaunchScreen.storyboard in Resources */,
+				0B5E3E222871D78400D5E9BC /* defaultTableViewCell.xib in Resources */,
 				51B11B622357093A0078E0A9 /* GoogleService-Info.plist in Resources */,
+				0B2111C7286D90470061965A /* DetailViewController.xib in Resources */,
+				0B2111C3286D89EE0061965A /* equipementTableViewCell.xib in Resources */,
 				5144ECAE2356F50900F4FB92 /* Assets.xcassets in Resources */,
 				51B11B64235709820078E0A9 /* Default-568h@2x.png in Resources */,
 				5144ECD52356F64800F4FB92 /* EquipmentListViewController.xib in Resources */,
@@ -439,7 +474,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2111BF286CD0200061965A /* equipement.swift in Sources */,
+				0B2111CB286DED5D0061965A /* faults.swift in Sources */,
+				0B2111C2286D89EE0061965A /* equipementTableViewCell.swift in Sources */,
 				5144ECA92356F50800F4FB92 /* EquipmentListViewController.swift in Sources */,
+				0B2111C6286D90470061965A /* DetailViewController.swift in Sources */,
+				0B5E3E212871D78400D5E9BC /* defaultTableViewCell.swift in Sources */,
 				51B11B6723570CE60078E0A9 /* EquipmentDataFetcher.swift in Sources */,
 				5144ECA52356F50800F4FB92 /* AppDelegate.swift in Sources */,
 			);
@@ -611,6 +651,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				INFOPLIST_FILE = beelding/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -640,6 +681,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beeldi.beelding;
 				PRODUCT_NAME = Beelding;
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EquipmentListViewController" customModule="beelding" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EquipmentListViewController" customModule="Beelding" customModuleProvider="target">
             <connections>
+                <outlet property="equipementTableView" destination="acF-RM-Fq0" id="8sZ-qq-SGF"/>
+                <outlet property="searchEquipement" destination="rb2-zi-Wxj" id="dip-y6-q96"/>
                 <outlet property="view" destination="iN0-l3-epB" id="7mY-eG-HcQ"/>
             </connections>
         </placeholder>
@@ -17,20 +21,35 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bon test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsq-hG-oPD">
-                    <rect key="frame" x="175" y="442.5" width="64" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rb2-zi-Wxj">
+                    <rect key="frame" x="20" y="54" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8Ip-vi-XH7"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="acF-RM-Fq0">
+                    <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="gsq-hG-oPD" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="QWz-cy-gtU"/>
-                <constraint firstItem="gsq-hG-oPD" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="TXu-mZ-M1W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rb2-zi-Wxj" secondAttribute="trailing" constant="20" id="0ZK-k2-8d5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="acF-RM-Fq0" secondAttribute="trailing" id="5wg-rF-TFc"/>
+                <constraint firstItem="acF-RM-Fq0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="esU-PG-K6n"/>
+                <constraint firstItem="acF-RM-Fq0" firstAttribute="top" secondItem="rb2-zi-Wxj" secondAttribute="bottom" constant="10" id="mXO-LU-saz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="acF-RM-Fq0" secondAttribute="bottom" id="oAV-9E-POU"/>
+                <constraint firstItem="rb2-zi-Wxj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="rji-OL-Xtc"/>
+                <constraint firstItem="rb2-zi-Wxj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="tLw-RV-Nou"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="-490" y="141"/>
+            <point key="canvasLocation" x="-491.304347826087" y="140.625"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
